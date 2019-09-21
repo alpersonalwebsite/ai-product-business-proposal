@@ -133,7 +133,7 @@ TODO: Add image robot
 
 Changing the disposition from a vertical to a horizontal display, ensures we are going to have less damaged trays since we are preventing the harm related to the pile’s weight. Yet, we still have damage resulting from human manipulation. 
 
-Why use ML/AI in solving this task…? (small scope)
+Why use ML/AI in solving this task...? (small scope)
 1.	Big amount of data
 2.	Repetitive low-value task
 3.	Cost reduction
@@ -171,7 +171,7 @@ If we can reduce the waste in 30%, supermarkets will retain USD 135 millions and
 
 **What precise task will you use ML/AI to accomplish? What business outcome or objective will you achieve?**
 
-We are using ML/AL (in the small scope) to determine…
+We are using ML/AL (in the small scope) to determine...
 1.	Which tray has to be repacked to avoid being wasted.
 2.	Determine trays to be discarded.
 
@@ -185,11 +185,11 @@ The output will be reducing waste. The outcome, saving money and contributing to
 
 **What business metrics will you apply to determine the success of your product? Good metrics are clearly defined and easily measurable. Specify how you will establish a baseline value to provide a point of comparison.**
 
-Waste reduction and Revenue gain: we can contrast how many trays we were throwing after and before, in concept of…
+Waste reduction and Revenue gain: we can contrast how many trays we were throwing after and before, in concept of...
 
 * Damaged trays
 
-… then, traduce the quantity into money.
+... then, traduce the quantity into money.
 
 We have other possible metrics derived from this one. For example, Community happiness and engagement in relation to the waste reduction. However, to properly measure this we should partner with a third-party organization/s that can help us to traduce our numbers (number of trays or amount of meat) into environmental measurable data.
 
@@ -212,18 +212,18 @@ We will start with a big dataset, adding as it’s needed (through measuring res
 
 **Consider the size and source of your data; what biases are built into the data and how might the data be improved?**
 
-We need to be sure that we are covering…
+We need to be sure that we are covering...
 * Good
 * Replace
 * Damaged
 
 We also want to be sure that we have an even distribution: 33% of each label.
 
-In relation to possible bias…
+In relation to possible bias...
 We could have more images from one label which would end with a bad trained model.
 We could have misclassified images which would also end with a bad trained model, and, if the amount is considerable, an useless model.
 
-We can prevent this…
+We can prevent this...
 Having the same number of images per label.
 Having several examples of replace for the annotators (which sometimes could be a little tricky to identify). 
 
@@ -231,7 +231,7 @@ Having several examples of replace for the annotators (which sometimes could be 
 
 **What labels did you decide to add to your data? And why did you decide on these labels versus any other option?**
 
-I decided…
+I decided...
 Which is the condition of the meat tray shown in the photo?
 * Good
 * Replace
@@ -239,7 +239,7 @@ Which is the condition of the meat tray shown in the photo?
 * Not sure
 
 I try to be as clear as I could avoiding losing sight. 
-I did also want to… Set a positive connotation for regular state, which is Good. Unify all possible marks under Replace and avoid negative references to packages exposed (example: waste). 
+I did also want to... Set a positive connotation for regular state, which is Good. Unify all possible marks under Replace and avoid negative references to packages exposed (example: waste). 
 I added not sure to have a way of handle unknown cases.
 
 ## Model
@@ -248,12 +248,46 @@ I added not sure to have a way of handle unknown cases.
 
 **How will you resource building the model that you need? Will you outsource model training and/or hosting to an external platform, or will you build the model using an in-house team, and why?**
 
-For this part of the project (small scope) I would opt for…
+For this part of the project (small scope) I would opt for...
 Figure 8 for the creation of the annotation job and annotators work
 Google AutoML for processing the dataset, doing the training and evaluating the results.
 A small in-house team to analyze Confusion Matrix and improve the Annotation Job.
 
-Why…? Because for this, a supermarket would have more costs and risk owning the services and staffing than co-creating value with other services providers like the mentioned ones.
+Why...? Because for this, a supermarket would have more costs and risk owning the services and staffing than co-creating value with other services providers like the mentioned ones.
 
+### Evaluating Results
 
+**Which model performance metrics are appropriate to measure the success of your model? What level of performance is required?**
 
+Since we want to take a quick action and avoid food waste, we will focus on Precision instead of Recall. 
+We want a high threshold to be sure that our model has a lower risk of misclassifying the assets (even when this could mean classify less images) or what is the same, a model with high confidence.
+
+We want a pretty performant Model with a F1 score as close to 1 as it can. However, 0.8 would be acceptable.
+
+## Minimum Viable Product (MVP)
+
+### Design
+
+**What does your minimum viable product look like? Include sketches of your product.**
+
+Let’s start with a flow chart related to the annotation or classifying process...
+
+![Annotation](images/process.png)
+
+In the first section of this proposal, I commented about the next phase of AI implementation (colloquially called big scope), with the OCR and the software to receive the artifact and define what should the robotic arm do linked to the classification result.
+
+However, to better illustrate the case (and until next implementation, big scope, and/or as an alternative way) we could create a cellphone application.
+
+![Functional high level flow](images/high-level-flow.png)
+
+Let’s start with a flow chart related to the annotation or classifying process...
+ 
+
+In the first section of this proposal, I commented about the next phase of AI implementation (colloquially called big scope), with the OCR and the software to receive the artifact and define what should the robotic arm do linked to the classification result.
+
+However, to better illustrate the case (and until next implementation, big scope, and/or as an alternative way) we could create a cellphone application.
+
+ 
+In the previous image, we have to patterns (processes)
+1.	Functional: the user has the web application installed in his phone. The web application has full access to the user camera and storage. Once the user takes a photo and sends it to the server API (get), the image is sent to Google AutoML service, the picture is compared against the datasets, a response is returned with the proper label and our API returns (as well) the class which is displayed in the user’s screen.
+2.	User interaction: user open the application. By default, the application enables the frontal camera. Then, the user clicks on the camera icon. The photo, for our example of the meat tray is shown. If the photo satisfies the user’s criteria, he can click on send and dispatch the asset (image) to the service. The service classify the image and return the proper label.
