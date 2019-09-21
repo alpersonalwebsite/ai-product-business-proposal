@@ -130,3 +130,53 @@ The robot will be able to:
 * Remove particular trays.
 
 TODO: Add image robot
+
+Changing the disposition from a vertical to a horizontal display, ensures we are going to have less damaged trays since we are preventing the harm related to the pile’s weight. Yet, we still have damage resulting from human manipulation. 
+
+Why use ML/AI in solving this task…? (small scope)
+1.	Big amount of data
+2.	Repetitive low-value task
+3.	Cost reduction
+
+Using ML/AI, we can early detect trays in “bad state” before they get damaged. This would allow us to replace the packaging, avoiding having to throw the produce and saving money. 
+
+Remember we are operating with the following labels:
+* Good -> nothing to do
+* Replace -> tray needs to be repacked
+* Damaged -> tray has to be thrown away since the produce was exposed
+* Not sure -> added to cover uncertainty
+
+### Business Case
+
+**Why is this an important problem to solve? Make a case for building this product in terms of its impact on recurring revenue, market share, customer happiness and/or other drivers of business success.**
+
+We want to reduce food waste in supermarkets. 
+(check previous boundaries like produce  meat trays, small scope)
+
+Statistics:  
+* Every year the US throws away 1/3 of all the food it produces: 133 billion pounds of food which represents USD 180 billions worth.
+* Grocery stores and supermarkets toss 10% of the total waste: 13.3 billion which would represent USD 1.33 billions.
+
+We are focusing on the preservation of the meat trays. 
+Statistics also show that supermarkets have to throw away 35% to 40% of the raw meat reaching a range of USD 450 millions lost.
+
+Meat waste is particularly important to control given that its scope goes beyond the waste and loss of money. From all the produce it is the biggest source of:
+* Water use and pollution
+* Deforestation
+* Climate change
+
+If we can reduce the waste in 30%, supermarkets will retain USD 135 millions and reduce drastically both, the contamination related to the waste of meat (and its resource consumption during production line) and the plastic used for its packing.
+
+### Application of ML/AI
+
+**What precise task will you use ML/AI to accomplish? What business outcome or objective will you achieve?**
+
+We are using ML/AL (in the small scope) to determine…
+1.	Which tray has to be repacked to avoid being wasted.
+2.	Determine trays to be discarded.
+
+This is going to happen through Image Annotation.
+
+The output will be reducing waste. The outcome, saving money and contributing to the environment.
+
+## Success Metrics
