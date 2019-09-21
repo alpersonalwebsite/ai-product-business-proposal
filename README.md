@@ -180,3 +180,80 @@ This is going to happen through Image Annotation.
 The output will be reducing waste. The outcome, saving money and contributing to the environment.
 
 ## Success Metrics
+
+### Success Metrics
+
+**What business metrics will you apply to determine the success of your product? Good metrics are clearly defined and easily measurable. Specify how you will establish a baseline value to provide a point of comparison.**
+
+Waste reduction and Revenue gain: we can contrast how many trays we were throwing after and before, in concept of…
+
+* Damaged trays
+
+… then, traduce the quantity into money.
+
+We have other possible metrics derived from this one. For example, Community happiness and engagement in relation to the waste reduction. However, to properly measure this we should partner with a third-party organization/s that can help us to traduce our numbers (number of trays or amount of meat) into environmental measurable data.
+
+## Data
+
+### Data Acquisition
+
+**Where will you source your data from? What is the cost to acquire these data? Are there any personally identifying information (PII) or data sensitivity issues you will need to overcome? Will data become available on an ongoing basis, or will you acquire a large batch of data that will need to be refreshed?**
+
+The source of data will be in-house (own supermarket). 
+IMPORTANT: We need to collect photos from all sides to properly identify “strange marks” product of the manipulation.
+
+The cost will not represent a significant value: everything needed is owned by the same actor and in the same facility.
+
+There are no data sensitivity issues. 
+
+We will start with a big dataset, adding as it’s needed (through measuring results of annotators and failures) the proper examples (images) to well-cover more cases. Since we own the data (we are the owner of the produce), we will have always data available. 
+
+### Data Source
+
+**Consider the size and source of your data; what biases are built into the data and how might the data be improved?**
+
+We need to be sure that we are covering…
+* Good
+* Replace
+* Damaged
+
+We also want to be sure that we have an even distribution: 33% of each label.
+
+In relation to possible bias…
+We could have more images from one label which would end with a bad trained model.
+We could have misclassified images which would also end with a bad trained model, and, if the amount is considerable, an useless model.
+
+We can prevent this…
+Having the same number of images per label.
+Having several examples of replace for the annotators (which sometimes could be a little tricky to identify). 
+
+### Choice of Data Labels
+
+**What labels did you decide to add to your data? And why did you decide on these labels versus any other option?**
+
+I decided…
+Which is the condition of the meat tray shown in the photo?
+* Good
+* Replace
+* Damaged
+* Not sure
+
+I try to be as clear as I could avoiding losing sight. 
+I did also want to… Set a positive connotation for regular state, which is Good. Unify all possible marks under Replace and avoid negative references to packages exposed (example: waste). 
+I added not sure to have a way of handle unknown cases.
+
+## Model
+
+### Model Building
+
+**How will you resource building the model that you need? Will you outsource model training and/or hosting to an external platform, or will you build the model using an in-house team, and why?**
+
+For this part of the project (small scope) I would opt for…
+Figure 8 for the creation of the annotation job and annotators work
+Google AutoML for processing the dataset, doing the training and evaluating the results.
+A small in-house team to analyze Confusion Matrix and improve the Annotation Job.
+
+Why…? Because for this, a supermarket would have more costs and risk owning the services and staffing than co-creating value with other services providers like the mentioned ones.
+
+
+
