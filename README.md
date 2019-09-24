@@ -332,3 +332,44 @@ The Manager of IT with the Marketing Department will analyze the percentage of w
 
 In relation to the results, the percentage of representatives using the web application will increase. 
 
+## Post MVP Deployment
+
+### Designing for Longevity
+
+**How might you improve your product in the long-term? How might real-world data be different from the training data? How will your product learn from new data? How might you employ A/B testing to improve your product?**
+
+The outcome of the project is reducing food waste. I consigned in the first section of this proposal the “big scope”, which is the implementation of the “trays’ classification” plus sell-by tag sorting through OCR. This would be the logic next step, since in the photos of our image annotation dataset we would have the sell-by tag so we would just need to read the date and arrange the trays.
+
+We will use real world data, so there’s no inconsistency in this point. 
+
+If we expand the classification to other produce, like pasta, we need to retrain our model adding the proper images representing each label of the new collection.
+
+TODO: Add image continuously learn and improve production system
+
+If the model has low confidence, the dataset goes to the human annotators. Then, human annotate the data and sent t back to the model for re-training. 
+
+Also, we can use an alternative approach: Smart Selection where instead of selecting all the unlabeled data, we just select the most relevant to improve the accuracy of our model (reducing, at the same time, costs).
+
+In relation to A/B testing we can deploy 2 models and split the data into 20% which is the challenger model / 80% which is the controlled model or model in production and then check performance metrics to determine which is the “winning model” and, if we need to replace the current model in production.
+
+## Monitor Bias
+
+**How do you plan to monitor or mitigate unwanted bias in your model?**
+
+Monitoring and mitigating bias should be an ongoing task.
+Models are going to be as good as the data we provide.
+If we add bias (wrong labels, unbalanced labels, etc) we will have an imprecise or useless model (in relation to the quantity of wrong images and the precision that we are pursuing).
+
+We have 3 types of bias...
+1.	Model bias: model generates biased outcomes
+2.	Data bias: introduced through the unbalanced selection of data
+3.	Annotation bias: introduced by humans annotating and generating the training data
+
+Practically, we are always going to have some kind of “bias”; what we want is lower it until an acceptable point.
+
+How we can reduce bias...
+
+1.	Selective understanding: that’s why from the packed produce we just considered meats and we even consigned what are the meats we are contemplating.
+2.	Data: the more data, the better. Particularly, for cases hard-enough to label. That’s why we need a properly defined Example section in our Annotation jobs.
+3.	Iteration and improve. This is related to the previous image of Continuous learn and improve production system. 
+Example: if we find a case that most of the annotators are missing, we should include it to our annotation job.
