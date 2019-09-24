@@ -291,3 +291,44 @@ However, to better illustrate the case (and until next implementation, big scope
 In the previous image, we have to patterns (processes)
 1.	Functional: the user has the web application installed in his phone. The web application has full access to the user camera and storage. Once the user takes a photo and sends it to the server API (get), the image is sent to Google AutoML service, the picture is compared against the datasets, a response is returned with the proper label and our API returns (as well) the class which is displayed in the user’s screen.
 2.	User interaction: user open the application. By default, the application enables the frontal camera. Then, the user clicks on the camera icon. The photo, for our example of the meat tray is shown. If the photo satisfies the user’s criteria, he can click on send and dispatch the asset (image) to the service. The service classify the image and return the proper label.
+
+### Use Cases
+
+**What persona are you designing for? Can you describe the major epic-level use cases your product addresses? How will users access this product?**
+
+Andrew is a representative of the Supermarket “Good Produce”. 
+He is 30 years old and lives in San Francisco, CA. 
+He likes Poetry and he is studying Computer Sciences. 
+To cover the costs of his studies, he is working full-time in the supermarket as “stock representative”.
+
+Personality:
+* Extrovert (always ready to help)
+* Analytical
+* Loyal
+
+He is frustrated because every day he has to go to the meat stands and check tray by tray its condition. Since sometimes marks (that could end in damage) are not so obvious, he spends a big amount of time per tray to ensure safety and prevent waste. He wants to do more complex tasks. He is aware that this job could be optimized with the use of AI.
+
+TODO: Add image persona > Andrew
+
+Having the web application, assure that he could do this faster. He doesn’t have to check meticulously the tray. The AI will do it for him. And, in the second instance or implementation (big scope), this task will be done entirely by AI, allowing Andrew to reach his goal of doing more import ants tasks like advising clients.
+
+The epic level would be if this service is extended to cover all packaged produce. 
+
+The users will be some of the supermarket stock representative, like Andrew. They will receive a commercial phone (that they would be able to use just in the supermarket and for supermarket affairs). The cellphones will come with the web application pre-installed. A short training will be provided for both, usage and global understanding of the service.
+
+### Roll-out
+
+**How will this be adopted? What does the go-to-market plan look like?**
+
+We have to remember this is not public-facing. Just internal usage and for some representatives. 
+
+The Manager of IT will provide to 10% or 20% of the stock representatives who work in the meat section (like Andrew) a cellphone that comes with the applications installed.
+
+All the users will have a demo and training session. After the session, users will be able to start consuming the service.
+
+Stock representatives will be isolated to 2 separated subsections: they will never check the same stands. 
+
+The Manager of IT with the Marketing Department will analyze the percentage of waste of both flanks or sides (the ones using the app, the one doing it manually without AI assistance). 
+
+In relation to the results, the percentage of representatives using the web application will increase. 
+
