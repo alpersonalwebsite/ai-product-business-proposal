@@ -114,7 +114,7 @@ Now, if instead of piling up the meat trays we have removable plates where the t
 
 Check the following illustration for a high-level comparison.
 
-TODO: Add image consumer trays
+![Consumer and Trays](images/consumer-trays.png)
 Left side is the traditional pile. Right side, the individual plate.
 
 
@@ -125,7 +125,7 @@ The robot will be able to:
 * Remove and replace an entire plate (empty or with trays)
 * Remove particular trays.
 
-TODO: Add image robot
+![AI and Trays](images/ai-trays.png)
 
 Changing the disposition from a vertical to a horizontal display, ensures we are going to have less damaged trays since we are preventing the harm related to the pile’s weight. Yet, we still have damage resulting from human manipulation. 
 
