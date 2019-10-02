@@ -304,7 +304,7 @@ Personality:
 
 He is frustrated because every day he has to go to the meat stands and check tray by tray its condition. Since sometimes marks (that could end in damage) are not so obvious, he spends a big amount of time per tray to ensure safety and prevent waste. He wants to do more complex tasks. He is aware that this job could be optimized with the use of AI.
 
-TODO: Add image persona > Andrew
+![Persona: Andrew Hix](images/andrew-hix.jpg) [Credits](https://fortune.com/2016/05/10/kroger-hiring-employees/)
 
 Having the web application, assure that he could do this faster. He doesn’t have to check meticulously the tray. The AI will do it for him. And, in the second instance or implementation (big scope), this task will be done entirely by AI, allowing Andrew to reach his goal of doing more import ants tasks like advising clients.
 
@@ -340,7 +340,7 @@ We will use real world data, so there’s no inconsistency in this point.
 
 If we expand the classification to other produce, like pasta, we need to retrain our model adding the proper images representing each label of the new collection.
 
-TODO: Add image continuously learn and improve production system
+![Continuously learn and improve production system](images/improvement.png) [Credits](https://udacity.com)
 
 If the model has low confidence, the dataset goes to the human annotators. Then, human annotate the data and sent t back to the model for re-training. 
 
