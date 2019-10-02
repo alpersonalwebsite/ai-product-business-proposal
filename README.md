@@ -36,18 +36,19 @@ Why is this happening...?
 1. Overstock <> Product display
 Supermarkets assemble big displays with the aim of capturing the user’s attention. This occurs particularly with on/off season products, produces and brands with high and/or low demand along with limited physical space, etc). The relation is proportional... They display both what they want to make trend (linked to pre- purchased batches) and what they want to cleanup stock (promotions).
 
-TODO: Add image clean-up sales.
-TODO: Add image seasonal offers.
+![Clean up sales](images/cleanup-sales.jpg) [Credits](https://www.telegraph.co.uk/business/2016/08/14/supermarket-sales-fall-below-100bn-in-price-war/)
+
+![Seasonal offer](images/seasonal-offer.jpg) [Credits](https://www.kiplinger.com/slideshow/saving/T065-S001-ways-to-save-money-on-groceries-without-coupons/index.html)
 
 2. Perfect appearance
 Supermarkets sustain people want perfect looking produce (color, size) rejecting those that don’t meet the “aesthetic criteria”. Note: since “perfection” is subjective, there is no way to properly measure it, nor have a standard benchmark to empirically validate this statement across regions and cultures.
 
-TODO: Add image ugly-produce.
+![Ugly Produce](images/ugly-produce.jpg) [Credits](https://civileats.com/2018/10/03/food-waste-wars-the-imperfect-enemy-of-the-good/)
 
 3. Sell-by dates
 Most foods are good long after their sell-by date. Even when sell-by is a guide of freshness (no expiration), supermarkets claim people don’t pick products close to or exceeding the sell-by label. More information about [Food Product Dating]( https://www.fsis.usda.gov/wps/portal/fsis/topics/food-safety-education/get-answers/food-safety-fact-sheets/food-labeling/food-product-dating/food-product-dating)
 
-TODO: Add image Sell-By-Dates tag 
+![Sell by date](images/sell-by.jpg) [Credits](https://rekordcenturion.co.za/35177/spar-denies-allegations-about-expired-products-on-shelves/)
 
 4. Packaging damage
 In relation to the way supermarkets store and display products, either by human manipulation and/or the weight of the product’s pile/stack on a particular product, various produces have to be thrown away because the package is broken, and the produce exposed.
@@ -57,7 +58,8 @@ Usually, supermarkets pack this produce in-house, so that unlike other packed go
 
 *Quick note:* When we refer to meats we are talking about red meat, poultry and pork.
 
-TODO: Add image meat trays.
+
+![Meat trays](images/meat-trays.jpg) [Credits](http://o2wa.blogspot.com/2015/08/the-importance-of-colour-of-meat-trays.html)
 
 **Small scope**
 
