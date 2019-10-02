@@ -58,7 +58,6 @@ Usually, supermarkets pack this produce in-house, so that unlike other packed go
 
 *Quick note:* When we refer to meats we are talking about red meat, poultry and pork.
 
-
 ![Meat trays](images/meat-trays.jpg) [Credits](http://o2wa.blogspot.com/2015/08/the-importance-of-colour-of-meat-trays.html)
 
 **Small scope**
@@ -76,21 +75,17 @@ We can consider as “damaged” those trays that expose the produce (any kind o
 
 Good meat tray example: no holes of any kind
 
-TODO: Add image custom meat tray 1
+![Good tray](images/good-tray.jpg)
 
 Replace meat tray example
 
 If you look from above with the tray in horizontal position you might not see the deterioration.
 
-TODO: Add image custom meat tray 2
-
 If you put the tray in angle, you can observe the marks of manipulation.
 
+![Replace tray](images/replace-tray.jpg)
+
 This is something particularly important at the time of adding photos to out dataset and examples to out annotation job.
-
-TODO: Add image custom meat tray 3
-
-TODO: Add image custom meat tray 4
 
 If this tray is not replaced soon, it will get damaged exposing the produce.
 
@@ -98,12 +93,11 @@ The spot with the marks is highly more susceptible to break than others since th
 
 Damaged meat tray example
 
-TODO: Add image custom meat tray 5
+![Open tray](images/open-tray.jpg)
 
 This tray is exposing the produce so we can consider it damaged.
 
 For logic reasons I am avoiding “Not sure” cases as it could constitute a source of bias or confusion. Not sure is just a safe escape to handle unpredictability.
-
 
 **Big scope**
 
